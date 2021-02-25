@@ -20,13 +20,13 @@ pipeline {
             }
         }
 
-        stage('Remove Previous Image and Container') {
+        /*stage('Remove Previous Image and Container') {
             steps {
                 sh 'docker rm --force "$CONTAINER_NAME"'
                 sh 'docker rmi --force "$IMAGE_NAME"'
 
             }
-        }
+        }*/
 
 
         stage('Create Docker Image') {
